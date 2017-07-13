@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+h2{
+  display:inline-block;
+}
+.btn{
+  margin: 0px;
+  box-shadow: 1px 1px 5px #888888;
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 200px 200px 200px 200px;
+  margin-left: 20px;
+
+}
+input{
+  height: 60px;
+  width: 500px;
+  margin-left: 200px;
+  border-radius: 200px 200px 200px 200px;
+  font-size: 20px;
+}
+
+
+.btn-hot {
+  color: #fff;
+  background-color: #010102;
+  border-bottom:2px solid #010102;
+}
+
+.btn-hot:hover, .btn-sky.active:focus, .btn-hot:focus, .open>.dropdown-toggle.btn-hot {
+  color: #fff;
+  background-color: #010102;
+  border-bottom:2px solid #010102;
+  outline: none;
+}
+
+.btn-hot:active, .btn-hot.active {
+  color: #fff;
+  background-color: #010102;
+  border-top:2px solid #010102;
+  margin-top: 2px;
+}
