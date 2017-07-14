@@ -14,3 +14,7 @@ The app will automatically reload if you change any of the source files.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+
+## License
+
+MIT license 

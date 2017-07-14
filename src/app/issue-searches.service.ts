@@ -16,7 +16,6 @@ export class IssueSearchesService {
     return Observable.throw(e.json().message);
   }
   searchIssue(url){
-
     const resultSearch = url + "/issues"
     return this.http.get(resultSearch)
       .map(res => res.json())

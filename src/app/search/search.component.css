@@ -10,7 +10,7 @@ h2{
 .btn{
   margin: 0px;
   box-shadow: 1px 1px 5px #ffffff;
-  width: 300px;
+  width:170px;
   height: 60px;
   font-size: 15px;
   border-radius: 200px 200px 200px 200px;
@@ -20,7 +20,7 @@ h2{
 input{
   height: 60px;
   width: 500px;
-  margin-left: 200px;
+  margin-left: 90px;
   border-radius: 200px 200px 200px 200px;
   font-size: 20px;
 }
