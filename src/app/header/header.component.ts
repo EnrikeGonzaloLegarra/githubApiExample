@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-/*  title = 'WELCOME TO IRONTEC TECHNICAL TEST';
-  img = 'assets/irontec.png'*/
+
   constructor() { }
 
   ngOnInit() {

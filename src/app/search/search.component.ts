@@ -1,9 +1,12 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IssueSearchesService } from '../issue-searches.service'
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  styleUrls: ['./search.component.css'],
+  providers: [ IssueSearchesService ]
 })
 export class SearchComponent implements OnInit {
   @Output() onInput: EventEmitter<string> = new EventEmitter<string>();

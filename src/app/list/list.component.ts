@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IssueSearchesService } from '../issue-searches.service';
+import { FormsModule }   from '@angular/forms';
 
 @Component({
   selector: 'app-list',

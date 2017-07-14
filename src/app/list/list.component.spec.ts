@@ -2,6 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListComponent } from './list.component';
 import { SearchComponent } from '../search/search.component';
+import { PaginationComponent } from '../pagination/pagination.component';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 describe('ListComponent', () => {
   let component: ListComponent;
@@ -9,7 +12,8 @@ describe('ListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListComponent ]
+      imports: [FormsModule, HttpModule],
+      declarations: [ ListComponent, SearchComponent, PaginationComponent]
     })
     .compileComponents();
   }));

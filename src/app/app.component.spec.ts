@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 describe('AppComponent', () => {
@@ -16,7 +17,8 @@ describe('AppComponent', () => {
         AppComponent,
         ListComponent,
         HeaderComponent,
-        SearchComponent
+        SearchComponent,
+        PaginationComponent
       ]
     }).compileComponents();
   }));
@@ -32,7 +34,6 @@ describe('AppComponent', () => {
     expect(header).toBeTruthy();
     expect(search).toBeTruthy(inputSearch)
     expect(list).toBeTruthy();
-
   }));
 
 

@@ -6,18 +6,18 @@ describe('IssueSearchesService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpModule],
-      providers: [IssueSearchesService]
+      providers: [ IssueSearchesService ]
     });
   });
 
   it('should be created', inject([IssueSearchesService], (service: IssueSearchesService) => {
     expect(service).toBeTruthy();
   }));
-  it('should get CARBRON', async(() => {
+  it('should get a JSON', async(() => {
     const service: IssueSearchesService = TestBed.get(IssueSearchesService);
-    const url ="www.api.github.com"
-    service.searchIssue(url).subscribe((response) => expect(response.json()).not.toBeNull(),
-      (error) => fail(error))
+    const url ="https://github.com/react-toolbox/react-toolbox"
+    service.searchIssue(url)
+      expect(typeof(service.searchIssue(url))).toBe("object");
   })
   )
 });
