@@ -16,10 +16,9 @@ export class IssueSearchesService {
     return Observable.throw(e.json().message);
   }
   searchIssue(url){
-    console.log(url);
-    const size = url.length
-    console.log('size ----> ',size)
-    return this.http.get(url)
+
+    const resultSearch = url + "/issues"
+    return this.http.get(resultSearch)
       .map(res => res.json())
       .catch(this.handleError);
   }

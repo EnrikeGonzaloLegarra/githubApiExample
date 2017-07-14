@@ -1,7 +1,7 @@
 
 <app-search (onInput)="searchByInput($event)"></app-search>
 
-  <div class="col-md-9 col-sm-offset-3 cards" >
+<div class="col-md-9 col-sm-offset-3 cards" >
     <h3></h3>
   </div>
 <div class="container" *ngFor='let issu of issues;'>
@@ -26,3 +26,13 @@
     </div>
   </div>
 </div>
+<!--
+<div class="container" *ngFor='let issu of issues;'>
+  <ul>
+    <li><span>{{issu?.number}}</span></li>
+    <li><span>{{issu?.title}}</span></li>
+    <li><span>{{issu?.body}}</span></li>
+    <li><span>{{issu?.state}}</span></li>
+  </ul>
+</div>-->
+<app-pagination></app-pagination>

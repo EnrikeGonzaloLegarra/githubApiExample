@@ -19,9 +19,8 @@ export class SearchComponent implements OnInit {
 
   issueSearch(search) {
     var res = search.replace("https://github.com", "https://api.github.com/repos");
-    var resultSearch = res + "/issues?page=2&per_page=100"
 
-    this.onInput.emit(resultSearch);
+    this.onInput.emit(res);
 
  }
 }

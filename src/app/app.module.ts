@@ -9,6 +9,7 @@ import { SearchComponent } from './search/search.component';
 import { ListComponent } from './list/list.component';
 import { IssueSearchesService } from './issue-searches.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 
@@ -18,7 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    ListComponent
+    ListComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   providers: [IssueSearchesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,ListComponent]
 })
 export class AppModule { }
