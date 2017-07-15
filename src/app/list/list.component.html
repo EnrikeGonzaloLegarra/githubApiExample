@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="row grid">
-    <masonry [options]="{ transitionDuration: '0.8s', resize: true }">
+
       <div class="issue-item col s12 m12" *ngFor='let issu of issues;'>
         <div class="brick-issue z-depth-3">
           <div class="profile-img">
@@ -24,7 +24,6 @@
           </div>
         </div>
       </div>
-    </masonry>
   </div>
 </div>
 <app-pagination></app-pagination>
