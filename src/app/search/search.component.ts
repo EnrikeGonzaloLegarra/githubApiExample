@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IssueSearchesService } from '../issue-searches.service'
-import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-search',
@@ -19,11 +19,9 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
-
   issueSearch(search) {
-    var res = search.replace("https://github.com", "https://api.github.com/repos");
-
-    this.onInput.emit(res);
+    var serachUrl = search.replace("https://github.com", "https://api.github.com/repos");
+    this.onInput.emit(serachUrl);
 
  }
 }

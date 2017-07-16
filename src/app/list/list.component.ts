@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IssueSearchesService } from '../issue-searches.service';
-import { FormsModule }   from '@angular/forms';
 
 @Component({
   selector: 'app-list',
@@ -11,6 +10,7 @@ import { FormsModule }   from '@angular/forms';
 export class ListComponent implements OnInit {
 
   issues : Object[];
+  size : any;
   constructor(private issueSearch: IssueSearchesService) { }
 
   ngOnInit() {
@@ -20,8 +20,8 @@ export class ListComponent implements OnInit {
     this.issueSearch.searchIssue(issues)
     .subscribe( issues =>{
       this.issues = issues;
-      console.log(issues);
     });
-
   }
+
+
 }
