@@ -17,9 +17,9 @@ The app will automatically reload if you change any of the source files.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 ## Views
 
-![first View] (https://github.com/EnrikeGonzaloLegarra/githubApiExample/tree/master/src/firstView.png)
+![first View](https://github.com/EnrikeGonzaloLegarra/githubApiExample/tree/master/src/firstView.png)
 
-![Result View] (https://github.com/EnrikeGonzaloLegarra/githubApiExample/tree/master/src/resultView.png)
+![Result View](https://github.com/EnrikeGonzaloLegarra/githubApiExample/tree/master/src/resultView.png)
 ## Frameworks
 
 Boostrap and materialize
@@ -27,7 +27,7 @@ Boostrap and materialize
 ## Contact
 
 For more information for this project, 
-Send me a message by linkedin  [https://www.linkedin.com/in/enrikegonzalolegarra/][Enrike Gonzalo].
+Send me a message by linkedin  [https://www.linkedin.com/in/enrikegonzalolegarra/] [Enrike Gonzalo].
 
 ## License
 
